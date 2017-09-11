@@ -1,5 +1,5 @@
 {
-    "name": "chrisbraybrooke/artisan-vue",
+    "name": "chrisbraybrooke/ArtisanVue",
     "description": "A package that helps scaffold vue applications living inside a laravel app",
     "license": "MIT",
     "authors": [
