@@ -5,7 +5,7 @@ namespace ChrisBraybrooke\ArtisanVue;
 use Illuminate\Support\ServiceProvider;
 use ChrisBraybrooke\ArtisanVue\Commands\MakeVueComponent;
 
-class HtmlServiceProvider extends ServiceProvider
+class ArtisanVueServiceProvider extends ServiceProvider
 {
 
   /**
