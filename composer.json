@@ -10,11 +10,36 @@
         }
     ],
     "require": {
-        "php": ">=7.0.0"
+        "php": ">=7.0.0",
+        "illuminate/http": "~5.4",
+        "illuminate/support": "~5.4"
     },
     "require-dev": {
         "laravel/laravel": "5.5.*",
         "phpunit/phpunit": "^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "ChrisBraybrooke\\ArtisanVue\\": "src"
+        },
+        "files": [
+
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ChrisBraybrooke\\ArtisanVue\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ChrisBraybrooke\\ArtisanVue\\ArtisanVueServiceProvider"
+            ]
+        }
     },
     "minimum-stability": "stable",
     "prefer-stable": true
