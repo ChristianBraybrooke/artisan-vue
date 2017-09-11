@@ -1,0 +1,13 @@
+{
+    "name": "chrisbraybrooke/artisan-vue",
+    "description": "A package that helps scaffold vue applications living inside a laravel app",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Christian Braybrooke",
+            "email": "chris@purplemountmedia.com"
+        }
+    ],
+    "require": {}
+}
