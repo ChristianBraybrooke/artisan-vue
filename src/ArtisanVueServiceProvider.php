@@ -16,6 +16,11 @@ class ArtisanVueServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->singleton(ArtisanVue::class);
+
+        $this->mergeConfigFrom(
+            __DIR__.'/config/artisan-vue.php', 'artisan-vue'
+        );
+
     }
 
     /**
@@ -25,11 +30,17 @@ class ArtisanVueServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        if ($this->app->runningInConsole()) {
-            $this->commands([
-                MakeVueComponent::class,
-            ]);
-        }
+
+      $this->publishes([
+          __DIR__.'/config/artisan-vue.php' => config_path('artisan-vue.php'),
+      ]);
+
+      if ($this->app->runningInConsole()) {
+          $this->commands([
+              MakeVueComponent::class,
+          ]);
+      }
+
     }
 
 }
