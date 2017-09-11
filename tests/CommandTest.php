@@ -1,6 +1,6 @@
 <?php
 
-namespace ChrisBraybrooke\ArtisanVue\Tests;
+namespace ChrisBraybrooke\ArtisanVue\Test;
 
 use Artisan;
 

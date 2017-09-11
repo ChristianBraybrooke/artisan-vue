@@ -1,6 +1,6 @@
 <?php
 
-namespace ChrisBraybrooke\ArtisanVue\Tests;
+namespace ChrisBraybrooke\ArtisanVue\Test;
 
 use VueGenerators\ServiceProvider;
 use Illuminate\Filesystem\Filesystem;
