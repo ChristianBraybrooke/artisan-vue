@@ -9,5 +9,13 @@
             "email": "chris@purplemountmedia.com"
         }
     ],
-    "require": {}
+    "require": {
+        "php": ">=7.0.0"
+    },
+    "require-dev": {
+        "laravel/laravel": "5.5.*",
+        "phpunit/phpunit": "^6.0"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
 }
